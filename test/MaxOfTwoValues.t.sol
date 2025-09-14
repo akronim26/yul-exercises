@@ -11,7 +11,7 @@ contract MaxOfTwoValuesTest is Test {
         c = new MaxOfTwoValues();
     }
 
-    function test_MaxOfTwoValues(uint256 x, uint256 y) public {
+    function test_MaxOfTwoValues(uint256 x, uint256 y) public view{
         vm.assume(x != y);
         uint256 r = c.main(x, y);
         if (x > y) assertEq(r, x);

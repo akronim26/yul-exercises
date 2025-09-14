@@ -11,7 +11,7 @@ contract ReturnBoolTest is Test {
         c = new ReturnBool();
     }
 
-    function test_ReturnBool() public {
+    function test_ReturnBool() public view {
         bool r = c.main();
         assertEq(r, true);
     }
