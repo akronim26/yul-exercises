@@ -1,100 +1,104 @@
-# Yul Puzzles by RareSkills
 
-## How to play
-Open `src/ReturnBool.sol` and `test/ReturnBool.t.sol`. Your goal is to write assembly code in each puzzle that makes the test pass. You may only write assembly code.
+## Exercise Progress
 
-Run the test with
+### Basic Operations
+- [x] [ReturnBool](./src/ReturnBool.sol) - Return a boolean value
+- [x] [SimpleRevert](./src/SimpleRevert.sol) - Simple revert operation
+- [x] [RevertWithSelector](./src/RevertWithSelector.sol) - Revert with custom selector
+- [x] [Return42](./src/Return42.sol) - Return the number 42
+- [x] [RevertWithError](./src/RevertWithError.sol) - Revert with error message
+- [x] [RevertWithSelectorPlusArgs](./src/RevertWithSelectorPlusArgs.sol) - Revert with selector and arguments
+- [x] [RevertWithPanic](./src/RevertWithPanic.sol) - Revert with panic code
+- [x] [Double](./src/Double.sol) - Double a number
+- [x] [Calculator](./src/Calculator.sol) - Basic calculator operations
+- [x] [DoubleOrNothing](./src/DoubleOrNothing.sol) - Conditional doubling
+- [x] [MaxOfTwoValues](./src/MaxOfTwoValues.sol) - Find maximum of two values
+- [ ] [IsPrime](./src/IsPrime.sol) - Check if number is prime
+- [ ] [CalldataLength](./src/CalldataLength.sol) - Get calldata length
+- [ ] [KeccakX](./src/KeccakX.sol) - Keccak256 hash operations
+- [ ] [KeccakFirstCalldata](./src/KeccakFirstCalldata.sol) - Hash first calldata element
+- [ ] [KeccakSecondCalldata](./src/KeccakSecondCalldata.sol) - Hash second calldata element
 
-```shell
-forge test --mp test/ReturnBool.t.sol
-```
+### Arrays and Storage
+- [ ] [LengthOfDynamicArray](./src/LengthOfDynamicArray.sol) - Get dynamic array length
+- [ ] [MaxOfArray](./src/MaxOfArray.sol) - Find maximum in array
+- [ ] [ReadFromStorage](./src/ReadFromStorage.sol) - Read from storage slot
+- [ ] [WriteToStorage](./src/WriteToStorage.sol) - Write to storage slot
+- [ ] [ReadFromFixedArray](./src/ReadFromFixedArray.sol) - Read from fixed array
+- [ ] [Tenary](./src/Tenary.sol) - Ternary operator implementation
+- [ ] [WriteToFixedArray](./src/WriteToFixedArray.sol) - Write to fixed array
+- [ ] [ReadFromDynamicArray](./src/ReadFromDynamicArray.sol) - Read from dynamic array
+- [ ] [WriteToDynamicArray](./src/WriteToDynamicArray.sol) - Write to dynamic array
+- [ ] [ReadFromMapping](./src/ReadFromMapping.sol) - Read from mapping
+- [ ] [WriteToMapping](./src/WriteToMapping.sol) - Write to mapping
+- [ ] [PushToDynamicArray](./src/PushToDynamicArray.sol) - Push to dynamic array
+- [ ] [PopFromDynamicArray](./src/PopFromDynamicArray.sol) - Pop from dynamic array
+- [ ] [ReadFromDoubleMapping](./src/ReadFromDoubleMapping.sol) - Read from nested mapping
+- [ ] [ReadFromDynamicArrayAndRevertOnFailure](./src/ReadFromDynamicArrayAndRevertOnFailure.sol) - Safe array read
+- [ ] [WriteToDoubleMapping](./src/WriteToDoubleMapping.sol) - Write to nested mapping
+- [ ] [WriteDynamicArrayToStorage](./src/WriteDynamicArrayToStorage.sol) - Write dynamic array to storage
+- [ ] [WriteTwoDynamicArraysToStorage](./src/WriteTwoDynamicArraysToStorage.sol) - Write two arrays to storage
 
-Now repeat this with the other puzzles.
+### Packed Storage
+- [ ] [ReadFromPacked128](./src/ReadFromPacked128.sol) - Read from packed 128-bit storage
+- [ ] [WriteToPacked128](./src/WriteToPacked128.sol) - Write to packed 128-bit storage
+- [ ] [ReadFromPacked64](./src/ReadFromPacked64.sol) - Read from packed 64-bit storage
+- [ ] [WriteToPacked64](./src/WriteToPacked64.sol) - Write to packed 64-bit storage
+- [ ] [WriteToPackedDynamicArray64](./src/WriteToPackedDynamicArray64.sol) - Write packed dynamic array
 
-## Suggested order of the Puzzles
-Go through the puzzles sequentially 
+### Structs and Complex Data
+- [ ] [ReadFromMappingInStruct](./src/ReadFromMappingInStruct.sol) - Read mapping in struct
+- [ ] [ReturnArrayOfUint256](./src/ReturnArrayOfUint256.sol) - Return uint256 array
+- [ ] [ReturnString](./src/ReturnString.sol) - Return string
+- [ ] [ReturnBytes](./src/ReturnBytes.sol) - Return bytes
+- [ ] [ReturnTupleOfString](./src/ReturnTupleOfString.sol) - Return string tuple
+- [ ] [ReturnSimpleStruct](./src/ReturnSimpleStruct.sol) - Return simple struct
+- [ ] [ReturnTupleOfUint256String](./src/ReturnTupleOfUint256String.sol) - Return mixed tuple
+- [ ] [ReturnTupleOfStringUnit256](./src/ReturnTupleOfStringUnit256.sol) - Return string-uint tuple
 
-0. [ReturnBool](./src/ReturnBool.sol) (_solved_)
-1. [SimpleRevert](./src/SimpleRevert.sol)
-2. [RevertWithSelector](./src/RevertWithSelector.sol)
-3. [Return42](./src/Return42.sol) 
-4. [RevertWithError](./src/RevertWithError.sol) 
-5. [RevertWithSelectorPlusArgs](./src/RevertWithSelectorPlusArgs.sol) 
-6. [RevertWithPanic](./src/RevertWithPanic.sol) 
-7. [Double](./src/Double.sol) 
-8. [Calculator](./src/Calculator.sol) 
-9. [DoubleOrNothing](./src/DoubleOrNothing.sol) 
-10. [MaxOfTwoValues](./src/MaxOfTwoValues.sol) 
-11. [IsPrime](./src/IsPrime.sol) 
-12. [CalldataLength](./src/CalldataLength.sol) 
-13. [KeccakX](./src/KeccakX.sol) 
-14. [KeccakFirstCalldata](./src/KeccakFirstCalldata.sol) 
-15. [KeccakSecondCalldata](./src/KeccakSecondCalldata.sol) 
-16. [LengthOfDynamicArray](./src/LengthOfDynamicArray.sol) 
-17. [MaxOfArray](./src/MaxOfArray.sol) 
-18. [ReadFromStorage](./src/ReadFromStorage.sol) 
-19. [WriteToStorage](./src/WriteToStorage.sol) 
-20. [ReadFromFixedArray](./src/ReadFromFixedArray.sol) 
-21. [Tenary](./src/Tenary.sol) 
-22. [WriteToFixedArray](./src/WriteToFixedArray.sol) 
-23. [ReadFromDynamicArray](./src/ReadFromDynamicArray.sol) 
-24. [WriteToDynamicArray](./src/WriteToDynamicArray.sol) 
-25. [ReadFromMapping](./src/ReadFromMapping.sol) 
-26. [WriteToMapping](./src/WriteToMapping.sol) 
-27. [PushToDynamicArray](./src/PushToDynamicArray.sol) 
-28. [PopFromDynamicArray](./src/PopFromDynamicArray.sol) 
-29. [ReadFromDoubleMapping](./src/ReadFromDoubleMapping.sol) 
-30. [ReadFromDynamicArrayAndRevertOnFailure](./src/ReadFromDynamicArrayAndRevertOnFailure.sol) 
-31. [WriteToDoubleMapping](./src/WriteToDoubleMapping.sol) 
-32. [WriteDynamicArrayToStorage](./src/WriteDynamicArrayToStorage.sol) 
-33. [WriteTwoDynamicArraysToStorage](./src/WriteTwoDynamicArraysToStorage.sol) 
-34. [ReadFromPacked128](./src/ReadFromPacked128.sol) 
-35. [WriteToPacked128](./src/WriteToPacked128.sol) 
-36. [ReadFromPacked64](./src/ReadFromPacked64.sol) 
-37. [WriteToPacked64](./src/WriteToPacked64.sol) 
-38. [WriteToPackedDynamicArray64](./src/WriteToPackedDynamicArray64.sol) 
-39. [ReadFromMappingInStruct](./src/ReadFromMappingInStruct.sol) 
-40. [EventWithoutData](./src/EventWithoutData.sol) 
-41. [EventWithData](./src/EventWithData.sol) 
-42. [EventWithIndexedData](./src/EventWithIndexedData.sol) 
-43. [EventWithMultipleData](./src/EventWithMultipleData.sol) 
-44. [AnonymonusEventWithoutData](./src/AnonymonusEventWithoutData.sol) 
-45. [AnonymonusEventWithData](./src/AnonymonusEventWithData.sol) 
-46. [AnonymonusEventWithIndexedData](./src/AnonymonusEventWithIndexedData.sol) 
-47. [AnonymonusEventWithComplexData](./src/AnonymonusEventWithComplexData.sol) 
-48. [EventWithComplexData](./src/EventWithComplexData.sol) 
-49. [BatchEvents](./src/BatchEvents.sol) 
-50. [CalculatorInFallback](./src/CalculatorInFallback.sol)
-51. [ReturnOppositeBool](./src/ReturnOppositeBool.sol)
-52. [ReturnTwoBools](./src/ReturnTwoBools.sol)
-53. [ReturnArrayOfUint256](./src/ReturnArrayOfUint256.sol)
-54. [ReturnString](./src/ReturnString.sol)
-55. [ReturnBytes](./src/ReturnBytes.sol)
-56. [FizzBuzz](./src/FizzBuzz.sol)
-57. [ReturnTupleOfString](./src/ReturnTupleOfString.sol)
-58. [ReturnSimpleStruct](./src/ReturnSimpleStruct.sol)
-59. [ReturnTupleOfUint256String](./src/ReturnTupleOfUint256String.sol)
-60. [ReturnTupleOfStringUnit256](./src/ReturnTupleOfStringUnit256.sol)
-61. [SendEther](./src/SendEther.sol)
-62. [SendAllEther](./src/SendAllEther.sol)
-63. [PaymentSplitter](./src/PaymentSplitter.sol)
-64. [SendBack](./src/SendBack.sol)
-65. [BasicBank](./src/BasicBank.sol)
-66. [SimpleCall](./src/SimpleCall.sol)
-67. [SimpleCallWithValue](./src/SimpleCallWithValue.sol)
-68. [Approve](./src/Approve.sol)
-69. [TransferFrom](./src/TransferFrom.sol)
-70. [BalanceOf](./src/BalanceOf.sol)
-71. [CreateSimple](./src/CreateSimple.sol)
-72. [CreateSimplePayable](./src/CreateSimplePayable.sol)
-73. [CreateSimpleCalldata](./src/CreateSimpleCalldata.sol)
-74. [DeployOneByte](./src/DeployOneByte.sol)
-75. [DeployNBytes](./src/DeployNBytes.sol)
-76. [SquareRoot](./src/SquareRoot.sol)
-77. [Division](./src/Division.sol)
-78. [AbsoluteValue](./src/AbsoluteValue.sol)
-79. [SetBit](./src/SetBit.sol)
-80. [Log2](./src/Log2.sol)
+### Events
+- [ ] [EventWithoutData](./src/EventWithoutData.sol) - Emit event without data
+- [ ] [EventWithData](./src/EventWithData.sol) - Emit event with data
+- [ ] [EventWithIndexedData](./src/EventWithIndexedData.sol) - Emit event with indexed data
+- [ ] [EventWithMultipleData](./src/EventWithMultipleData.sol) - Emit event with multiple data
+- [ ] [AnonymonusEventWithoutData](./src/AnonymonusEventWithoutData.sol) - Emit anonymous event
+- [ ] [AnonymonusEventWithData](./src/AnonymonusEventWithData.sol) - Emit anonymous event with data
+- [ ] [AnonymonusEventWithIndexedData](./src/AnonymonusEventWithIndexedData.sol) - Emit anonymous indexed event
+- [ ] [AnonymonusEventWithComplexData](./src/AnonymonusEventWithComplexData.sol) - Emit anonymous complex event
+- [ ] [EventWithComplexData](./src/EventWithComplexData.sol) - Emit complex event
+- [ ] [BatchEvents](./src/BatchEvents.sol) - Emit multiple events
 
-## Acknowledgement
-This work was funded by a [grant from the Ethereum Foundation](https://blog.ethereum.org/2025/02/06/allocation-q4-24#:~:text=Set%20of%2080%20puzzles%20for%20players%20to%20become%20comfortable%20with%20writing%20Yul%20assembly%20where%20players%20fill%20out%20a%20code%20block%20and%20see%20if%20the%20unit%20tests%20pass.).
+### Advanced Operations
+- [ ] [CalculatorInFallback](./src/CalculatorInFallback.sol) - Calculator in fallback function
+- [ ] [ReturnOppositeBool](./src/ReturnOppositeBool.sol) - Return opposite boolean
+- [ ] [ReturnTwoBools](./src/ReturnTwoBools.sol) - Return two booleans
+- [ ] [FizzBuzz](./src/FizzBuzz.sol) - FizzBuzz implementation
+
+### Ether Operations
+- [ ] [SendEther](./src/SendEther.sol) - Send ether to address
+- [ ] [SendAllEther](./src/SendAllEther.sol) - Send all ether
+- [ ] [PaymentSplitter](./src/PaymentSplitter.sol) - Split payments
+- [ ] [SendBack](./src/SendBack.sol) - Send ether back
+- [ ] [BasicBank](./src/BasicBank.sol) - Basic banking operations
+
+### External Calls
+- [ ] [SimpleCall](./src/SimpleCall.sol) - Simple external call
+- [ ] [SimpleCallWithValue](./src/SimpleCallWithValue.sol) - Call with ether value
+- [ ] [Approve](./src/Approve.sol) - ERC20 approve
+- [ ] [TransferFrom](./src/TransferFrom.sol) - ERC20 transferFrom
+- [ ] [BalanceOf](./src/BalanceOf.sol) - ERC20 balanceOf
+
+### Contract Creation
+- [ ] [CreateSimple](./src/CreateSimple.sol) - Create simple contract
+- [ ] [CreateSimplePayable](./src/CreateSimplePayable.sol) - Create payable contract
+- [ ] [CreateSimpleCalldata](./src/CreateSimpleCalldata.sol) - Create with calldata
+- [ ] [DeployOneByte](./src/DeployOneByte.sol) - Deploy one byte contract
+- [ ] [DeployNBytes](./src/DeployNBytes.sol) - Deploy N bytes contract
+
+### Mathematical Operations
+- [ ] [SquareRoot](./src/SquareRoot.sol) - Calculate square root
+- [ ] [Division](./src/Division.sol) - Division operations
+- [ ] [AbsoluteValue](./src/AbsoluteValue.sol) - Calculate absolute value
+- [ ] [SetBit](./src/SetBit.sol) - Set specific bit
+- [ ] [Log2](./src/Log2.sol) - Calculate log base 2
+
