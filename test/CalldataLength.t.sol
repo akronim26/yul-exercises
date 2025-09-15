@@ -11,7 +11,7 @@ contract CalldataLengthTest is Test {
         c = new CalldataLength();
     }
 
-    function test_CalldataLength(bytes calldata x) public {
+    function test_CalldataLength(bytes calldata x) public view {
         uint256 length = c.main(x);
         assertEq(length, msg.data.length);
     }

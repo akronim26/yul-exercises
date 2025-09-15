@@ -13,18 +13,18 @@
 - [x] [Calculator](./src/Calculator.sol) - Basic calculator operations
 - [x] [DoubleOrNothing](./src/DoubleOrNothing.sol) - Conditional doubling
 - [x] [MaxOfTwoValues](./src/MaxOfTwoValues.sol) - Find maximum of two values
-- [ ] [IsPrime](./src/IsPrime.sol) - Check if number is prime
-- [ ] [CalldataLength](./src/CalldataLength.sol) - Get calldata length
-- [ ] [KeccakX](./src/KeccakX.sol) - Keccak256 hash operations
-- [ ] [KeccakFirstCalldata](./src/KeccakFirstCalldata.sol) - Hash first calldata element
-- [ ] [KeccakSecondCalldata](./src/KeccakSecondCalldata.sol) - Hash second calldata element
+- [x] [IsPrime](./src/IsPrime.sol) - Check if number is prime
+- [x] [CalldataLength](./src/CalldataLength.sol) - Get calldata length
+- [x] [KeccakX](./src/KeccakX.sol) - Keccak256 hash operations
+- [x] [KeccakFirstCalldata](./src/KeccakFirstCalldata.sol) - Hash first calldata element
+- [x] [KeccakSecondCalldata](./src/KeccakSecondCalldata.sol) - Hash second calldata element
 
 ### Arrays and Storage
-- [ ] [LengthOfDynamicArray](./src/LengthOfDynamicArray.sol) - Get dynamic array length
-- [ ] [MaxOfArray](./src/MaxOfArray.sol) - Find maximum in array
-- [ ] [ReadFromStorage](./src/ReadFromStorage.sol) - Read from storage slot
-- [ ] [WriteToStorage](./src/WriteToStorage.sol) - Write to storage slot
-- [ ] [ReadFromFixedArray](./src/ReadFromFixedArray.sol) - Read from fixed array
+- [x] [LengthOfDynamicArray](./src/LengthOfDynamicArray.sol) - Get dynamic array length
+- [x] [MaxOfArray](./src/MaxOfArray.sol) - Find maximum in array
+- [x] [ReadFromStorage](./src/ReadFromStorage.sol) - Read from storage slot
+- [x] [WriteToStorage](./src/WriteToStorage.sol) - Write to storage slot
+- [x] [ReadFromFixedArray](./src/ReadFromFixedArray.sol) - Read from fixed array
 - [ ] [Tenary](./src/Tenary.sol) - Ternary operator implementation
 - [ ] [WriteToFixedArray](./src/WriteToFixedArray.sol) - Write to fixed array
 - [ ] [ReadFromDynamicArray](./src/ReadFromDynamicArray.sol) - Read from dynamic array
