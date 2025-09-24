@@ -25,9 +25,9 @@
 - [x] [ReadFromStorage](./src/ReadFromStorage.sol) - Read from storage slot
 - [x] [WriteToStorage](./src/WriteToStorage.sol) - Write to storage slot
 - [x] [ReadFromFixedArray](./src/ReadFromFixedArray.sol) - Read from fixed array
-- [ ] [Tenary](./src/Tenary.sol) - Ternary operator implementation
-- [ ] [WriteToFixedArray](./src/WriteToFixedArray.sol) - Write to fixed array
-- [ ] [ReadFromDynamicArray](./src/ReadFromDynamicArray.sol) - Read from dynamic array
+- [x] [Tenary](./src/Tenary.sol) - Ternary operator implementation
+- [x] [WriteToFixedArray](./src/WriteToFixedArray.sol) - Write to fixed array
+- [x] [ReadFromDynamicArray](./src/ReadFromDynamicArray.sol) - Read from dynamic array
 - [ ] [WriteToDynamicArray](./src/WriteToDynamicArray.sol) - Write to dynamic array
 - [ ] [ReadFromMapping](./src/ReadFromMapping.sol) - Read from mapping
 - [ ] [WriteToMapping](./src/WriteToMapping.sol) - Write to mapping
