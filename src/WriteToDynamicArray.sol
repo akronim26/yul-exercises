@@ -6,9 +6,24 @@ contract WriteToDynamicArray {
 
     function main(uint256[] memory x) external {
         assembly {
-            // your code here
-            // store the values in the DYNAMIC array `x` in the storage variable `writeHere`
-            // Hint: https://www.rareskills.io/post/solidity-dynamic
+            // Store the length of x into writeHere.slot
+            sstore(writeHere.slot, mload(x))
+
+            // Calculate the storage slot for writeHere[0]
+            // keccak256(writeHere.slot)
+            mstore(0x00, writeHere.slot)
+            let base := keccak256(0x00, 0x20)
+
+            // Get the length of x
+            let len := mload(x)
+
+            // The data of x starts at x + 0x20
+            let data := add(x, 0x20)
+
+            // Store each element
+            for { let i := 0 } lt(i, len) { i := add(i, 1) } {
+                sstore(add(base, i), mload(add(data, mul(i, 0x20))))
+            }
         }
     }
 

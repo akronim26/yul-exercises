@@ -2,10 +2,12 @@
 pragma solidity ^0.8.13;
 
 contract WriteToMapping {
-    mapping(uint256 index => uint256) public writeHere;
+    mapping(uint256 => uint256) public writeHere;
 
     function main(uint256 index, uint256 value) external {
+        bytes32 slot = keccak256(abi.encode(index, 0));
         assembly {
+            sstore(slot, value)
             // your code here
             // store `value` at the `index` in the mapping `writeHere`
             // Hint: https://www.rareskills.io/post/solidity-dynamic
