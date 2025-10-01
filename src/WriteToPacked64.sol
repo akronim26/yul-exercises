@@ -12,6 +12,10 @@ contract WriteToPacked64 {
             // your code here
             // change the value of `writeHere` storage variable to `v`
             // be careful not to alter the value of `someValue` variable
+            let slot := sload(writeHere.slot)
+            let new_ :=  and(slot, 0xFFFFFFFF00000000FFFFFFFFFFFFFFFF)
+            let val := or(new_, shl(64, and(v, 0xFFFFFFFFFFFFFFFF)))
+            sstore(writeHere.slot, val)
         }
     }
 }

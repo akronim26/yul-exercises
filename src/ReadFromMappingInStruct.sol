@@ -24,10 +24,14 @@ contract ReadFromMappingInStruct {
 
     function main(uint256 index) external view returns (uint256) {
         assembly {
-            // your code here
-            // within the struct `RandomValues`, read from the mapping `readMe` at `index`
-            // and return it
-            // Hint: https://www.rareskills.io/post/solidity-dynamic
+            // To access randValues.readMe[index], we need to compute the storage slot:
+            // keccak256(abi.encode(index, mappingSlot)), where mappingSlot = 3 (readMe's slot in struct) + struct's slot (0)
+            mstore(0x00, index) // store index at 0x00
+            mstore(0x20, 3)     // mapping slot for readMe in struct is 3, randValues is at slot 0
+            let slot := keccak256(0x00, 0x40) // keccak256(index . mappingSlot)
+            let val := sload(slot)
+            mstore(0x00, val)
+            return(0x00, 0x20)
         }
     }
 }

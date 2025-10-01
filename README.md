@@ -36,18 +36,18 @@
 - [x] [ReadFromDoubleMapping](./src/ReadFromDoubleMapping.sol) - Read from nested mapping
 - [x] [ReadFromDynamicArrayAndRevertOnFailure](./src/ReadFromDynamicArrayAndRevertOnFailure.sol) - Safe array read
 - [x] [WriteToDoubleMapping](./src/WriteToDoubleMapping.sol) - Write to nested mapping
-- [ ] [WriteDynamicArrayToStorage](./src/WriteDynamicArrayToStorage.sol) - Write dynamic array to storage
-- [ ] [WriteTwoDynamicArraysToStorage](./src/WriteTwoDynamicArraysToStorage.sol) - Write two arrays to storage
+- [x] [WriteDynamicArrayToStorage](./src/WriteDynamicArrayToStorage.sol) - Write dynamic array to storage
+- [x] [WriteTwoDynamicArraysToStorage](./src/WriteTwoDynamicArraysToStorage.sol) - Write two arrays to storage
 
 ### Packed Storage
-- [ ] [ReadFromPacked128](./src/ReadFromPacked128.sol) - Read from packed 128-bit storage
-- [ ] [WriteToPacked128](./src/WriteToPacked128.sol) - Write to packed 128-bit storage
-- [ ] [ReadFromPacked64](./src/ReadFromPacked64.sol) - Read from packed 64-bit storage
-- [ ] [WriteToPacked64](./src/WriteToPacked64.sol) - Write to packed 64-bit storage
-- [ ] [WriteToPackedDynamicArray64](./src/WriteToPackedDynamicArray64.sol) - Write packed dynamic array
+- [x] [ReadFromPacked128](./src/ReadFromPacked128.sol) - Read from packed 128-bit storage
+- [x] [WriteToPacked128](./src/WriteToPacked128.sol) - Write to packed 128-bit storage
+- [x] [ReadFromPacked64](./src/ReadFromPacked64.sol) - Read from packed 64-bit storage
+- [x] [WriteToPacked64](./src/WriteToPacked64.sol) - Write to packed 64-bit storage
+- [x] [WriteToPackedDynamicArray64](./src/WriteToPackedDynamicArray64.sol) - Write packed dynamic array
 
 ### Structs and Complex Data
-- [ ] [ReadFromMappingInStruct](./src/ReadFromMappingInStruct.sol) - Read mapping in struct
+- [x] [ReadFromMappingInStruct](./src/ReadFromMappingInStruct.sol) - Read mapping in struct
 - [ ] [ReturnArrayOfUint256](./src/ReturnArrayOfUint256.sol) - Return uint256 array
 - [ ] [ReturnString](./src/ReturnString.sol) - Return string
 - [ ] [ReturnBytes](./src/ReturnBytes.sol) - Return bytes
