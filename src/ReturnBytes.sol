@@ -5,7 +5,7 @@ contract ReturnBytes {
     function main(address a, uint256 b) external pure returns (bytes memory) {
         assembly {
             // your code here
-            // encode a and b `abi.encode(a,b)` and return it.
+            // encode a and b `abi.encode(a,b)` and return it.z
         }
     }
 }

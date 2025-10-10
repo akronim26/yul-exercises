@@ -57,14 +57,14 @@
 - [ ] [ReturnTupleOfStringUnit256](./src/ReturnTupleOfStringUnit256.sol) - Return string-uint tuple
 
 ### Events
-- [ ] [EventWithoutData](./src/EventWithoutData.sol) - Emit event without data
-- [ ] [EventWithData](./src/EventWithData.sol) - Emit event with data
-- [ ] [EventWithIndexedData](./src/EventWithIndexedData.sol) - Emit event with indexed data
-- [ ] [EventWithMultipleData](./src/EventWithMultipleData.sol) - Emit event with multiple data
-- [ ] [AnonymonusEventWithoutData](./src/AnonymonusEventWithoutData.sol) - Emit anonymous event
-- [ ] [AnonymonusEventWithData](./src/AnonymonusEventWithData.sol) - Emit anonymous event with data
-- [ ] [AnonymonusEventWithIndexedData](./src/AnonymonusEventWithIndexedData.sol) - Emit anonymous indexed event
-- [ ] [AnonymonusEventWithComplexData](./src/AnonymonusEventWithComplexData.sol) - Emit anonymous complex event
+- [x] [EventWithoutData](./src/EventWithoutData.sol) - Emit event without data
+- [x] [EventWithData](./src/EventWithData.sol) - Emit event with data
+- [x] [EventWithIndexedData](./src/EventWithIndexedData.sol) - Emit event with indexed data
+- [x] [EventWithMultipleData](./src/EventWithMultipleData.sol) - Emit event with multiple data
+- [x] [AnonymonusEventWithoutData](./src/AnonymonusEventWithoutData.sol) - Emit anonymous event
+- [x] [AnonymonusEventWithData](./src/AnonymonusEventWithData.sol) - Emit anonymous event with data
+- [x] [AnonymonusEventWithIndexedData](./src/AnonymonusEventWithIndexedData.sol) - Emit anonymous indexed event
+- [x] [AnonymonusEventWithComplexData](./src/AnonymonusEventWithComplexData.sol) - Emit anonymous complex event
 - [ ] [EventWithComplexData](./src/EventWithComplexData.sol) - Emit complex event
 - [ ] [BatchEvents](./src/BatchEvents.sol) - Emit multiple events
 
