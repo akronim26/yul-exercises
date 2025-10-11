@@ -11,7 +11,7 @@ contract ReturnTwoBoolsTest is Test {
         c = new ReturnTwoBools();
     }
 
-    function test_ReturnTwoBools(bool a, bool b) public {
+    function test_ReturnTwoBools(bool a, bool b) public view {
         (bool r, bool rr) = c.main(a, b);
 
         assertEq(r, a);

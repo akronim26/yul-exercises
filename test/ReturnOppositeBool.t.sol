@@ -11,7 +11,7 @@ contract ReturnOppositeBoolTest is Test {
         c = new ReturnOppositeBool();
     }
 
-    function test_ReturnOppositeBool(bool x) public {
+    function test_ReturnOppositeBool(bool x) public view {
         bool r = c.main(x);
         assertEq(r, !x);
     }

@@ -11,7 +11,7 @@ contract ReturnSimpleStructTest is Test {
         c = new ReturnSimpleStruct();
     }
 
-    function test_ReturnSimpleStruct(uint256 x, uint256 y) public {
+    function test_ReturnSimpleStruct(uint256 x, uint256 y) public view{
         ReturnSimpleStruct.Point memory r = c.main(x, y);
 
         assertEq(r.x, x);

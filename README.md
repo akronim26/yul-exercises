@@ -48,13 +48,13 @@
 
 ### Structs and Complex Data
 - [x] [ReadFromMappingInStruct](./src/ReadFromMappingInStruct.sol) - Read mapping in struct
-- [ ] [ReturnArrayOfUint256](./src/ReturnArrayOfUint256.sol) - Return uint256 array
-- [ ] [ReturnString](./src/ReturnString.sol) - Return string
-- [ ] [ReturnBytes](./src/ReturnBytes.sol) - Return bytes
-- [ ] [ReturnTupleOfString](./src/ReturnTupleOfString.sol) - Return string tuple
-- [ ] [ReturnSimpleStruct](./src/ReturnSimpleStruct.sol) - Return simple struct
-- [ ] [ReturnTupleOfUint256String](./src/ReturnTupleOfUint256String.sol) - Return mixed tuple
-- [ ] [ReturnTupleOfStringUnit256](./src/ReturnTupleOfStringUnit256.sol) - Return string-uint tuple
+- [x] [ReturnArrayOfUint256](./src/ReturnArrayOfUint256.sol) - Return uint256 array
+- [x] [ReturnString](./src/ReturnString.sol) - Return string
+- [x] [ReturnBytes](./src/ReturnBytes.sol) - Return bytes
+- [x] [ReturnTupleOfString](./src/ReturnTupleOfString.sol) - Return string tuple
+- [x] [ReturnSimpleStruct](./src/ReturnSimpleStruct.sol) - Return simple struct
+- [x] [ReturnTupleOfUint256String](./src/ReturnTupleOfUint256String.sol) - Return mixed tuple
+- [x] [ReturnTupleOfStringUnit256](./src/ReturnTupleOfStringUnit256.sol) - Return string-uint tuple
 
 ### Events
 - [x] [EventWithoutData](./src/EventWithoutData.sol) - Emit event without data
@@ -65,14 +65,14 @@
 - [x] [AnonymonusEventWithData](./src/AnonymonusEventWithData.sol) - Emit anonymous event with data
 - [x] [AnonymonusEventWithIndexedData](./src/AnonymonusEventWithIndexedData.sol) - Emit anonymous indexed event
 - [x] [AnonymonusEventWithComplexData](./src/AnonymonusEventWithComplexData.sol) - Emit anonymous complex event
-- [ ] [EventWithComplexData](./src/EventWithComplexData.sol) - Emit complex event
-- [ ] [BatchEvents](./src/BatchEvents.sol) - Emit multiple events
+- [x] [EventWithComplexData](./src/EventWithComplexData.sol) - Emit complex event
+- [x] [BatchEvents](./src/BatchEvents.sol) - Emit multiple events
 
 ### Advanced Operations
-- [ ] [CalculatorInFallback](./src/CalculatorInFallback.sol) - Calculator in fallback function
-- [ ] [ReturnOppositeBool](./src/ReturnOppositeBool.sol) - Return opposite boolean
-- [ ] [ReturnTwoBools](./src/ReturnTwoBools.sol) - Return two booleans
-- [ ] [FizzBuzz](./src/FizzBuzz.sol) - FizzBuzz implementation
+- [x] [CalculatorInFallback](./src/CalculatorInFallback.sol) - Calculator in fallback function
+- [x] [ReturnOppositeBool](./src/ReturnOppositeBool.sol) - Return opposite boolean
+- [x] [ReturnTwoBools](./src/ReturnTwoBools.sol) - Return two booleans
+- [x] [FizzBuzz](./src/FizzBuzz.sol) - FizzBuzz implementation
 
 ### Ether Operations
 - [ ] [SendEther](./src/SendEther.sol) - Send ether to address
