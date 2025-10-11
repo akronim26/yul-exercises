@@ -76,10 +76,10 @@
 
 ### Ether Operations
 - [x] [SendEther](./src/SendEther.sol) - Send ether to address
-- [x] [SendAllEther](./src/SendAllEther.sol) - Send all ether
-- [x] [PaymentSplitter](./src/PaymentSplitter.sol) - Split payments
-- [x] [SendBack](./src/SendBack.sol) - Send ether back
-- [x] [BasicBank](./src/BasicBank.sol) - Basic banking operations
+- [ ] [SendAllEther](./src/SendAllEther.sol) - Send all ether
+- [ ] [PaymentSplitter](./src/PaymentSplitter.sol) - Split payments
+- [ ] [SendBack](./src/SendBack.sol) - Send ether back
+- [ ] [BasicBank](./src/BasicBank.sol) - Basic banking operations
 
 ### External Calls
 - [x] [SimpleCall](./src/SimpleCall.sol) - Simple external call
@@ -89,11 +89,11 @@
 - [x] [BalanceOf](./src/BalanceOf.sol) - ERC20 balanceOf
 
 ### Contract Creation
-- [ ] [CreateSimple](./src/CreateSimple.sol) - Create simple contract
-- [ ] [CreateSimplePayable](./src/CreateSimplePayable.sol) - Create payable contract
-- [ ] [CreateSimpleCalldata](./src/CreateSimpleCalldata.sol) - Create with calldata
-- [ ] [DeployOneByte](./src/DeployOneByte.sol) - Deploy one byte contract
-- [ ] [DeployNBytes](./src/DeployNBytes.sol) - Deploy N bytes contract
+- [x] [CreateSimple](./src/CreateSimple.sol) - Create simple contract
+- [x] [CreateSimplePayable](./src/CreateSimplePayable.sol) - Create payable contract
+- [x] [CreateSimpleCalldata](./src/CreateSimpleCalldata.sol) - Create with calldata
+- [x] [DeployOneByte](./src/DeployOneByte.sol) - Deploy one byte contract
+- [x] [DeployNBytes](./src/DeployNBytes.sol) - Deploy N bytes contract
 
 ### Mathematical Operations
 - [ ] [SquareRoot](./src/SquareRoot.sol) - Calculate square root
