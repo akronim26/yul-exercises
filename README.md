@@ -75,18 +75,18 @@
 - [x] [FizzBuzz](./src/FizzBuzz.sol) - FizzBuzz implementation
 
 ### Ether Operations
-- [ ] [SendEther](./src/SendEther.sol) - Send ether to address
-- [ ] [SendAllEther](./src/SendAllEther.sol) - Send all ether
-- [ ] [PaymentSplitter](./src/PaymentSplitter.sol) - Split payments
-- [ ] [SendBack](./src/SendBack.sol) - Send ether back
-- [ ] [BasicBank](./src/BasicBank.sol) - Basic banking operations
+- [x] [SendEther](./src/SendEther.sol) - Send ether to address
+- [x] [SendAllEther](./src/SendAllEther.sol) - Send all ether
+- [x] [PaymentSplitter](./src/PaymentSplitter.sol) - Split payments
+- [x] [SendBack](./src/SendBack.sol) - Send ether back
+- [x] [BasicBank](./src/BasicBank.sol) - Basic banking operations
 
 ### External Calls
-- [ ] [SimpleCall](./src/SimpleCall.sol) - Simple external call
-- [ ] [SimpleCallWithValue](./src/SimpleCallWithValue.sol) - Call with ether value
-- [ ] [Approve](./src/Approve.sol) - ERC20 approve
-- [ ] [TransferFrom](./src/TransferFrom.sol) - ERC20 transferFrom
-- [ ] [BalanceOf](./src/BalanceOf.sol) - ERC20 balanceOf
+- [x] [SimpleCall](./src/SimpleCall.sol) - Simple external call
+- [x] [SimpleCallWithValue](./src/SimpleCallWithValue.sol) - Call with ether value
+- [x] [Approve](./src/Approve.sol) - ERC20 approve
+- [x] [TransferFrom](./src/TransferFrom.sol) - ERC20 transferFrom
+- [x] [BalanceOf](./src/BalanceOf.sol) - ERC20 balanceOf
 
 ### Contract Creation
 - [ ] [CreateSimple](./src/CreateSimple.sol) - Create simple contract

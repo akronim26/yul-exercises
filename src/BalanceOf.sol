@@ -2,16 +2,33 @@
 pragma solidity ^0.8.13;
 
 contract BalanceOf {
-    // emit these
     function main(address token) external view returns (uint256) {
         assembly {
-            // your code here
             // return the balance of this contract using ERC20 "token"
-            // assume "token" is an ERC20 contract
-            // hint: balanceOf has function selector 0x70a08231 and signature "balanceOf(address)"
-            // hint: since this is a view function, you should use staticcall
-            // hint: use `returndatacopy` to copy the return data to the memory
-       }
+            // balanceOf has function selector 0x70a08231 and signature "balanceOf(address)"
+            // use staticcall since this is a view function
+            
+            let ptr := mload(0x40)
+            
+            // Store function selector (4 bytes)
+            mstore(ptr, 0x70a0823100000000000000000000000000000000000000000000000000000000)
+            
+            // Store address (this contract) at offset 0x04
+            mstore(add(ptr, 0x04), address())
+            
+            // Call token contract with staticcall
+            // staticcall(gas, address, input_offset, input_size, output_offset, output_size)
+            let success := staticcall(gas(), token, ptr, 0x24, ptr, 0x20)
+            
+            // Revert if call failed
+            if iszero(success) {
+                revert(0, 0)
+            }
+            
+            // Load the return value from memory and return it
+            let balance_ := mload(ptr)
+            mstore(0x40, add(ptr, 0x20))
+            return(ptr, 0x20)
+        }
     }
 }
-
