@@ -76,10 +76,10 @@
 
 ### Ether Operations
 - [x] [SendEther](./src/SendEther.sol) - Send ether to address
-- [ ] [SendAllEther](./src/SendAllEther.sol) - Send all ether
-- [ ] [PaymentSplitter](./src/PaymentSplitter.sol) - Split payments
-- [ ] [SendBack](./src/SendBack.sol) - Send ether back
-- [ ] [BasicBank](./src/BasicBank.sol) - Basic banking operations
+- [x] [SendAllEther](./src/SendAllEther.sol) - Send all ether
+- [x] [PaymentSplitter](./src/PaymentSplitter.sol) - Split payments
+- [x] [SendBack](./src/SendBack.sol) - Send ether back
+- [x] [BasicBank](./src/BasicBank.sol) - Basic banking operations
 
 ### External Calls
 - [x] [SimpleCall](./src/SimpleCall.sol) - Simple external call
@@ -96,9 +96,9 @@
 - [x] [DeployNBytes](./src/DeployNBytes.sol) - Deploy N bytes contract
 
 ### Mathematical Operations
-- [ ] [SquareRoot](./src/SquareRoot.sol) - Calculate square root
-- [ ] [Division](./src/Division.sol) - Division operations
-- [ ] [AbsoluteValue](./src/AbsoluteValue.sol) - Calculate absolute value
-- [ ] [SetBit](./src/SetBit.sol) - Set specific bit
-- [ ] [Log2](./src/Log2.sol) - Calculate log base 2
+- [x] [SquareRoot](./src/SquareRoot.sol) - Calculate square root
+- [x] [Division](./src/Division.sol) - Division operations
+- [x] [AbsoluteValue](./src/AbsoluteValue.sol) - Calculate absolute value
+- [x] [SetBit](./src/SetBit.sol) - Set specific bit
+- [x] [Log2](./src/Log2.sol) - Calculate log base 2
 

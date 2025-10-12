@@ -11,7 +11,7 @@ contract PaymentSplitterTest is Test {
         c = new PaymentSplitter();
     }
 
-    function validateAddress(address to) internal {
+    function validateAddress(address to) internal view {
         vm.assume(to != address(this) && uint160(to) > uint160(100) && to != address(c));
         vm.assume(to.balance == 0);
         vm.assume(to.code.length == 0);

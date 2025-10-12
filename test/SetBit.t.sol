@@ -11,7 +11,7 @@ contract SetBitTest is Test {
         c = new SetBit();
     }
 
-    function test_setBit(uint256 x, uint8 i) public {
+    function test_setBit(uint256 x, uint8 i) public view {
         uint256 result = c.main(x, i);
         assertEq(result, x | (1 << i));
     }

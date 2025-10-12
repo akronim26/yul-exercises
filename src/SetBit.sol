@@ -8,6 +8,8 @@ contract SetBit {
           // your code here
           // set the i-th bit of x to 1, keeping every other bit the same
           // return the result
+          mstore(0x00, or(x, shl(i, 1)))
+          return(0x00, 0x20)
      }
   }
 }
